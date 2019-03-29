@@ -13,6 +13,9 @@ COPY --from=0 /go/bin/rippleapi ./
 # Agree to License
 RUN mkdir ~/.config && touch ~/.config/ripple_license_agreed
 
+# generate config
+RUN ./rippleapi
+
 EXPOSE 40001
 
 CMD ["./rippleapi"]
