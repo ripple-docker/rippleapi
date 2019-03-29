@@ -40,13 +40,14 @@ func Load() (c Conf, halt bool) {
 	if halt {
 		conf.MustExport(Conf{
 			DatabaseType:           "mysql",
-			DSN:                    "root@/ripple",
+			DSN:                    "root:changeme@tcp(db:3306)/ripple",
 			ListenTo:               ":40001",
 			Unix:                   false,
 			HanayoKey:              "Potato",
 			BeatmapRequestsPerUser: 2,
 			RankQueueSize:          25,
-			RedisAddr:              "localhost:6379",
+			OsuAPIKey:		"OSUAPIKEY",
+			RedisAddr:              "redis:6379",
 		}, "api.conf")
 		fmt.Println("Please compile the configuration file (api.conf).")
 	}
