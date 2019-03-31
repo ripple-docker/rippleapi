@@ -40,7 +40,7 @@ func Load() (c Conf, halt bool) {
 	if halt {
 		conf.MustExport(Conf{
 			DatabaseType:           "mysql",
-			DSN:                    "root:changeme@tcp(db:3306)/ripple",
+			DSN:                    "root:MYSQL_ROOT_PASSWORD@tcp(db:3306)/ripple",
 			ListenTo:               ":40001",
 			Unix:                   false,
 			HanayoKey:              "Potato",
