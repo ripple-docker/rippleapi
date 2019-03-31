@@ -21,6 +21,7 @@ RUN chmod +x entrypoint.sh
 
 ENV OSUAPIKEY pleaseuseme
 ENV MYSQL_ROOT_PASSWORD changeme
+ENV APISECRET Potato
 EXPOSE 40001
 
 ENTRYPOINT [ "./entrypoint.sh" ]

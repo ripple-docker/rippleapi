@@ -2,4 +2,6 @@
 
 sed -i 's/OSUAPIKEY/'"$OSUAPIKEY"'/g' api.conf
 sed -i 's/MYSQL_ROOT_PASSWORD/'"$MYSQL_ROOT_PASSWORD"'/g' api.conf
+sed -i 's/APISECRETVALUE/'"$APISECRET"'/g' api.conf
+
 exec "$@"

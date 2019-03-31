@@ -43,7 +43,7 @@ func Load() (c Conf, halt bool) {
 			DSN:                    "root:MYSQL_ROOT_PASSWORD@tcp(db:3306)/ripple",
 			ListenTo:               ":40001",
 			Unix:                   false,
-			HanayoKey:              "Potato",
+			HanayoKey:              "APISECRETVALUE",
 			BeatmapRequestsPerUser: 2,
 			RankQueueSize:          25,
 			OsuAPIKey:		"OSUAPIKEY",
