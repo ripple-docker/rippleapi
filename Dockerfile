@@ -1,4 +1,4 @@
-from golang
+FROM golang:1.12-alpine
 
 WORKDIR /go/src/zxq.co/ripple/rippleapi
 COPY . .
